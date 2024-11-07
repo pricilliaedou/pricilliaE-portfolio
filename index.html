@@ -1,1 +1,176 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
 
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+      style="font-family: Inter, 'Noto Sans', sans-serif"
+    >
+      <div class="flex items-center bg-white p-4 pb-2 justify-end">
+        <div class="flex w-12 items-center justify-end">
+          <button
+            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#111418] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+          >
+            <div
+              class="text-[#111418]"
+              data-icon="Sun"
+              data-size="24px"
+              data-weight="regular"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
+                ></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="flex p-4 @container">
+        <div class="flex w-full flex-col gap-4 items-start">
+          <div class="flex gap-4 flex-col items-start">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-20 w-20 overflow-hidden"
+            >
+              <img
+                class="rounded-full w-full h-full object-cover"
+                src="./images/logo.png"
+                alt="image du logo"
+              />
+            </div>
+            <div class="flex flex-col justify-center">
+              <p
+                class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em]"
+              >
+                Développeuse full stack
+              </p>
+              <p class="text-[#637588] text-base font-normal leading-normal">
+                Pricillia EDOU EDOU
+              </p>
+              <p class="text-[#637588] text-xs font-normal leading-normal">
+                Meaux, (FRANCE)
+              </p>
+            </div>
+          </div>
+          <button
+            class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto"
+          >
+            <span class="truncate">Message</span>
+          </button>
+        </div>
+      </div>
+      <div class="pb-3">
+        <div class="flex border-b border-[#dce0e5] px-4 gap-8">
+          <a
+            class="flex flex-col items-center justify-center border-b-[3px] border-b-[#111418] text-[#111418] pb-[13px] pt-4"
+            href="#"
+          >
+            <p
+              class="text-[#111418] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              Projets
+            </p>
+          </a>
+          <a
+            class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4"
+            href="#"
+          >
+            <p
+              class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              Moi
+            </p>
+          </a>
+          <a
+            class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4"
+            href="#"
+          >
+            <p
+              class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              Contact
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="flex gap-3 p-3 flex-wrap pr-4">
+        <a
+          href="https://github.com/pricilliaedou"
+          target="_blank"
+          class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-2 pr-4"
+        >
+          <div
+            class="text-[#111418]"
+            data-icon="GithubLogo"
+            data-size="20px"
+            data-weight="regular"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-[#111418] text-sm font-medium leading-normal">
+            GitHub
+          </p>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/pricillia-lydiane-edou-edou"
+          target="_blank"
+          class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-2 pr-4"
+        >
+          <div
+            class="text-[#111418]"
+            data-icon="LinkedinLogo"
+            data-size="20px"
+            data-weight="regular"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+              ></path>
+            </svg>
+          </div>
+          <p class="text-[#111418] text-sm font-medium leading-normal">
+            LinkedIn
+          </p>
+        </a>
+      </div>
+
+      <div class="h-5 bg-white"></div>
+    </div>
+  </body>
+</html>
