@@ -18,39 +18,12 @@
     ></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
-  <body class="pb-20">
+  <body>
     <div
       class="relative flex size-full flex-col bg-white justify-between group/design-root overflow-x-hidden"
       style="font-family: Inter, 'Noto Sans', sans-serif"
     >
-      <div>
-        <div class="flex items-center bg-white p-4 pb-2 justify-end">
-          <div class="flex w-12 items-center justify-end">
-            <button
-              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#111418] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
-            >
-              <div
-                class="text-[#111418]"
-                data-icon="Sun"
-                data-size="24px"
-                data-weight="regular"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24px"
-                  height="24px"
-                  fill="currentColor"
-                  viewBox="0 0 256 256"
-                >
-                  <path
-                    d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
-                  ></path>
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-
+      <div class="mt-10">
         <div class="@container">
           <div class="@[480px]:px-4 @[480px]:py-3">
             <div
@@ -429,15 +402,15 @@
         <div class="h-20"></div>
       </div>
 
-      <div
+      <nav
         class="fixed bottom-0 w-full z-50 flex gap-2 border-t border-[#f0f2f4] bg-white px-4 pb-3 pt-2"
       >
         <a
-          class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#111418]"
+          class="just group flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#637588]"
           href="./index.html"
         >
           <div
-            class="text-[#111418] flex h-8 items-center justify-center"
+            class="text-[#637588] group-hover:text-[#111418] flex h-8 items-center justify-center"
             data-icon="House"
             data-size="24px"
             data-weight="fill"
@@ -455,18 +428,18 @@
             </svg>
           </div>
           <p
-            class="text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
+            class="text-[#637588] group-hover:text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
           >
             Accueil
           </p>
         </a>
 
         <a
-          class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]"
+          class="just group flex flex-1 flex-col items-center justify-end gap-1 text-[#637588] hover:text-[#111418]"
           href="./projets.html"
         >
           <div
-            class="text-[#637588] flex h-8 items-center justify-center"
+            class="text-[#637588] group-hover:text-[#111418] flex h-8 items-center justify-center"
             data-icon="Briefcase"
             data-size="24px"
             data-weight="regular"
@@ -484,17 +457,17 @@
             </svg>
           </div>
           <p
-            class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]"
+            class="text-[#637588] group-hover:text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
           >
             Projets
           </p>
         </a>
         <a
-          class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]"
+          class="just group flex flex-1 flex-col items-center justify-end gap-1 text-[#637588] hover:text-[#111418]"
           href="./contact.html"
         >
           <div
-            class="text-[#637588] flex h-8 items-center justify-center"
+            class="text-[#637588] group-hover:text-[#111418] flex h-8 items-center justify-center"
             data-icon="Envelope"
             data-size="24px"
             data-weight="regular"
@@ -512,12 +485,12 @@
             </svg>
           </div>
           <p
-            class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]"
+            class="text-[#637588] group-hover:text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
           >
             Contact
           </p>
         </a>
-      </div>
+      </nav>
     </div>
   </body>
 </html>

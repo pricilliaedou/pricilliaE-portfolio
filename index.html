@@ -13,7 +13,6 @@
 
     <title>Portfolio - Accueil</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
@@ -21,34 +20,7 @@
       class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
       style="font-family: Inter, 'Noto Sans', sans-serif"
     >
-      <div class="flex items-center bg-white p-4 pb-2 justify-end">
-        <div class="flex w-12 items-center justify-end">
-          <button
-            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#111418] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
-          >
-            <div
-              class="text-[#111418]"
-              data-icon="Sun"
-              data-size="24px"
-              data-weight="regular"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24px"
-                height="24px"
-                fill="currentColor"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"
-                ></path>
-              </svg>
-            </div>
-          </button>
-        </div>
-      </div>
-
-      <div class="flex p-4 @container">
+      <div class="flex p-4 @container mt-10">
         <div class="flex w-full flex-col gap-4 items-start">
           <div class="flex gap-4 flex-col items-start">
             <div
@@ -75,51 +47,51 @@
             </div>
           </div>
           <button
-            class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto"
+            class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto hover:bg-[#e0d9ce]"
           >
-            <span class="truncate">Message</span>
+            <a href="./contact.html"> <span class="truncate">Message</span> </a>
           </button>
         </div>
       </div>
       <div class="pb-3">
-        <div class="flex border-b border-[#dce0e5] px-4 gap-8">
+        <nav class="flex border-b border-[#dce0e5] px-4 gap-8">
           <a
-            class="flex flex-col items-center justify-center border-b-[3px] border-b-[#111418] text-[#111418] pb-[13px] pt-4"
+            class="flex group flex-col items-center justify-center text-[#637588] pb-[13px] pt-4 hover:border-b-2 hover:border-[#111418] hover:text-[#111418]"
             href="./projets.html"
           >
             <p
-              class="text-[#111418] text-sm font-bold leading-normal tracking-[0.015em]"
+              class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em] group-hover:text-[#111418]"
             >
               Projets
             </p>
           </a>
           <a
-            class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4"
+            class="flex group flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4 hover:border-[#111418] hover:text-[#111418]"
             href="./moi.html"
           >
             <p
-              class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em]"
+              class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em] group-hover:text-[#111418]"
             >
               À propos de moi
             </p>
           </a>
           <a
-            class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4"
+            class="flex group flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4 hover:border-[#111418] hover:text-[#111418]"
             href="./contact.html"
           >
             <p
-              class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em]"
+              class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em] group-hover:text-[#111418]"
             >
               Contact
             </p>
           </a>
-        </div>
+        </nav>
       </div>
       <div class="flex gap-3 p-3 flex-wrap pr-4">
         <a
           href="https://github.com/pricilliaedou"
           target="_blank"
-          class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-2 pr-4"
+          class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-2 pr-4 hover:bg-[#e0d9ce]"
         >
           <div
             class="text-[#111418]"
@@ -147,7 +119,7 @@
         <a
           href="https://www.linkedin.com/in/pricillia-lydiane-edou-edou"
           target="_blank"
-          class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-2 pr-4"
+          class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-2 pr-4 hover:bg-[#e0d9ce]"
         >
           <div
             class="text-[#111418]"

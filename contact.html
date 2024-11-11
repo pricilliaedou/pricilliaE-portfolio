@@ -21,13 +21,13 @@
       class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden"
       style="font-family: Inter, 'Noto Sans', sans-serif"
     >
-      <div>
+      <div class="mt-10">
         <div class="flex items-center bg-white p-4 pb-2 justify-between">
-          <h2
+          <h1
             class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12 pr-12"
           >
-            Contact
-          </h2>
+            CONTACT
+          </h1>
         </div>
         <div class="flex p-4 @container">
           <div class="flex w-full flex-col gap-4 items-center">
@@ -68,10 +68,71 @@
           name="contact"
           method="POST"
           data-netlify="true"
-          class="w-full max-w-[600px]"
+          class="w-full max-w-[480px]"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <div class="flex items-center px-4 py-3 gap-3 @container">
+
+          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label for="name" class="flex flex-col min-w-40 flex-1">
+              <p
+                class="text-[#111418] text-base font-medium leading-normal pb-2"
+              >
+                Name
+              </p>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Votre nom"
+                required
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-14 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal"
+                value=""
+              />
+            </label>
+          </div>
+          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label for="email" class="flex flex-col min-w-40 flex-1">
+              <p
+                class="text-[#111418] text-base font-medium leading-normal pb-2"
+              >
+                Email
+              </p>
+              <input
+                id="email"
+                name="email"
+                type="text"
+                placeholder="Votre email"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] h-14 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal"
+                value=""
+              />
+            </label>
+          </div>
+          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label for="message" class="flex flex-col min-w-40 flex-1">
+              <p
+                class="text-[#111418] text-base font-medium leading-normal pb-2"
+              >
+                Message
+              </p>
+              <textarea
+                id="message"
+                type="text"
+                name="message"
+                placeholder="Saisissez votre message..."
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dce0e5] bg-white focus:border-[#dce0e5] min-h-36 placeholder:text-[#637588] p-[15px] text-base font-normal leading-normal"
+              ></textarea>
+            </label>
+          </div>
+          <div class="flex px-4 py-3">
+            <button
+              type="submit"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-[#f0f2f4] text-[#111418] text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#e0d9ce]"
+            >
+              <span class="truncate">ENVOYER</span>
+            </button>
+          </div>
+
+          <!-- <div class="flex items-center px-4 py-3 gap-3 @container">
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 shrink-0"
             >
@@ -94,11 +155,11 @@
           <div class="flex px-4 py-3">
             <button
               type="submit"
-              class="flex min-w-[84px] max-w-[280px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-[#f0f2f4] text-[#111418] text-base font-bold leading-normal tracking-[0.015em]"
+              class="flex min-w-[84px] max-w-[280px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-[#f0f2f4] text-[#111418] text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#e0d9ce]"
             >
               <span class="truncate">ENVOYER</span>
             </button>
-          </div>
+          </div> -->
         </form>
       </div>
       <div>
@@ -124,15 +185,15 @@
 
         <div class="h-20 bg-white"></div>
       </div>
-      <div
+      <nav
         class="fixed bottom-0 w-full z-50 flex gap-2 border-t border-[#f0f2f4] bg-white px-4 pb-3 pt-2"
       >
         <a
-          class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#111418]"
+          class="just group flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#637588]"
           href="./index.html"
         >
           <div
-            class="text-[#111418] flex h-8 items-center justify-center"
+            class="text-[#637588] group-hover:text-[#111418] flex h-8 items-center justify-center"
             data-icon="House"
             data-size="24px"
             data-weight="fill"
@@ -150,18 +211,18 @@
             </svg>
           </div>
           <p
-            class="text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
+            class="text-[#637588] group-hover:text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
           >
             Accueil
           </p>
         </a>
 
         <a
-          class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]"
+          class="just group flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]"
           href="./projets.html"
         >
           <div
-            class="text-[#637588] flex h-8 items-center justify-center"
+            class="text-[#637588] group-hover:text-[#111418] flex h-8 items-center justify-center"
             data-icon="Briefcase"
             data-size="24px"
             data-weight="regular"
@@ -179,17 +240,17 @@
             </svg>
           </div>
           <p
-            class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]"
+            class="text-[#637588] group-hover:text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
           >
             Projets
           </p>
         </a>
         <a
-          class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]"
+          class="just group flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]"
           href="./moi.html"
         >
           <div
-            class="text-[#637588] flex h-8 items-center justify-center"
+            class="text-[#637588] group-hover:text-[#111418] flex h-8 items-center justify-center"
             data-icon="User"
             data-size="24px"
             data-weight="regular"
@@ -207,12 +268,12 @@
             </svg>
           </div>
           <p
-            class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]"
+            class="text-[#637588] group-hover:text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]"
           >
             À propos de moi
           </p>
         </a>
-      </div>
+      </nav>
     </div>
   </body>
 </html>
